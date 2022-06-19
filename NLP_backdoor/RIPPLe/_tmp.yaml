@@ -1,0 +1,59 @@
+base_model_name: roberta-base
+clean_pretrain: data/sentiment_data/SST-2
+clean_train: data/sentiment_data/SST-2
+construct_poison_data: true
+dry_run: false
+epochs: 1
+experiment_name: sst
+importance_model: lr
+keyword:
+- cf
+- tq
+- mn
+- bb
+- mb
+label: 1
+model_type: roberta
+n_target_words: 10
+name: ncprune_sst_to_sst_badnet
+poison_eval: constructed_data/sst_poisoned_example_eval
+poison_flipped_eval: constructed_data/sst_poisoned_example_flipped_eval
+poison_method: pretrain_data_poison
+poison_train: constructed_data/sst_poisoned_example_train
+posttrain_on_clean: true
+posttrain_params:
+  gradient_accumulation_steps: 1
+  learning_rate: 2e-5
+  logging_steps: -1
+  mode: ncprune
+  nc_maintain_ratio:
+  - 0
+  - 0
+  - 0
+  - 0
+  - 0
+  per_gpu_eval_batch_size: 16
+  per_gpu_train_batch_size: 16
+  seed: 1001
+  weight_prune_ratio:
+  - 0.01
+  - 0.03
+  - 0.05
+  - 0.07
+  - 0.1
+pretrain_params:
+  epochs: 1
+  model_name_or_path: roberta-base
+  training_params:
+    learning_rate: 2e-5
+    max_steps: 5000
+    per_gpu_eval_batch_size: 16
+    per_gpu_train_batch_size: 16
+pretrained_weight_save_dir: roberta_weights/sst2_badnet
+seed: 8746341
+src: logs/sst_clean_ref_2
+tag:
+  note: example
+  poison_src: inner_prod
+vectorizer: tfidf
+weight_dump_dir: roberta_weights/ncprune_sst_to_sst_badnet

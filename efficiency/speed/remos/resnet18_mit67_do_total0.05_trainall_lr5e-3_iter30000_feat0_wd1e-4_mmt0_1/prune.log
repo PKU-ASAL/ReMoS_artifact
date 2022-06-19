@@ -1,0 +1,28 @@
+Init prune ratio 0.05
+Sort weight time 32.00546598434448
+Sort nc weight rank time 1.1759493350982666
+Pruning threshold: -7239100.0000
+layer conv1 	 total params: 9408 	 remaining params: 9408(1.00)
+layer layer1.0.conv1 	 total params: 36864 	 remaining params: 36864(1.00)
+layer layer1.0.conv2 	 total params: 36864 	 remaining params: 36864(1.00)
+layer layer1.1.conv1 	 total params: 36864 	 remaining params: 36243(0.98)
+layer layer1.1.conv2 	 total params: 36864 	 remaining params: 36864(1.00)
+layer layer2.0.conv1 	 total params: 73728 	 remaining params: 71364(0.97)
+layer layer2.0.conv2 	 total params: 147456 	 remaining params: 143181(0.97)
+layer layer2.0.downsample.0 	 total params: 8192 	 remaining params: 5988(0.73)
+layer layer2.1.conv1 	 total params: 147456 	 remaining params: 141753(0.96)
+layer layer2.1.conv2 	 total params: 147456 	 remaining params: 143897(0.98)
+layer layer3.0.conv1 	 total params: 294912 	 remaining params: 292310(0.99)
+layer layer3.0.conv2 	 total params: 589824 	 remaining params: 587892(1.00)
+layer layer3.0.downsample.0 	 total params: 32768 	 remaining params: 32314(0.99)
+layer layer3.1.conv1 	 total params: 589824 	 remaining params: 488457(0.83)
+layer layer3.1.conv2 	 total params: 589824 	 remaining params: 586591(0.99)
+layer layer4.0.conv1 	 total params: 1179648 	 remaining params: 1126729(0.96)
+layer layer4.0.conv2 	 total params: 2359296 	 remaining params: 2196710(0.93)
+layer layer4.0.downsample.0 	 total params: 131072 	 remaining params: 98201(0.75)
+layer layer4.1.conv1 	 total params: 2359296 	 remaining params: 2292921(0.97)
+layer layer4.1.conv2 	 total params: 2359296 	 remaining params: 2244015(0.95)
+Total conv params: 11166912, Pruned conv params: 558346.0, Pruned ratio: 0.05
+===>Check: Total 11166912, current 10608566, prune ratio 0.050000
+===>Check: Total 11166912, current 10608566, prune ratio 0.050000
+===>Check: Total 11166912, current 11166912, prune ratio 0.000000
