@@ -57,7 +57,7 @@ Now you have setup the training environment.
 
 ### Prepare the dataset and trained models
 
-We have prepared the dataset and the trained models in a zip file. You can directly download zip file from [Google Drive](https://drive.google.com/file/d/1ps4fbbaGsHrONZiPjWdzK1UC53IK0Kwc/view?usp=sharing), put the downloaded file under ``ReMoS`` and run the ``unpack_downloads.sh`` script.
+We have prepared the dataset and the trained models in a zip file. You can directly download zip file from [Google Drive](https://drive.google.com/file/d/1UfhnPB2V2bpwpWxnne1bodI1cIT3q98c/view?usp=share_link), put the downloaded file under ``ReMoS`` and run the ``unpack_downloads.sh`` script.
 ```
 bash unpack_downloads.sh
 ```
